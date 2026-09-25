@@ -1,216 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="google-site-verification" content="UNyLUGb0T8uPeu2vWWsn48dt-SckKcoL0YNslWnBS2o" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Options analytics dashboard for Indian markets." />
-  <title>OptionPulse — Options Analytics</title>
+  <meta name="description" content="Prince Kumar — Data Engineer transforming complex data into scalable solutions." />
+  <title>Prince Kumar | Data Engineer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="top-strip">Market analytics workspace • Demo values for UI preview</div>
-
-  <header class="navbar">
-    <a class="brand" href="#">
-      <span class="brand-mark">O</span>
-      <span>
-        <strong>OptionPulse</strong>
-        <small>Options Intelligence</small>
-      </span>
-    </a>
-
-    <nav class="nav-links">
-      <a href="#dashboard">Dashboard</a>
-      <a href="#option-chain">Option Chain</a>
-      <a href="#analytics">Analytics</a>
-      <a href="#tools">Tools</a>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#home">PK<span>.</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
-
-    <div class="nav-actions">
-      <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☼</button>
-      <button class="login-btn">Login / Register</button>
-      <button class="menu-btn" aria-label="Menu">☰</button>
-    </div>
   </header>
 
   <main>
-    <section class="hero" id="dashboard">
-      <div class="hero-copy">
-        <span class="eyebrow">● BUILT FOR OPTIONS TRADERS</span>
-        <h1>Live Options<br><span>Analytics</span><br>for Indian Markets</h1>
-        <p>
-          Track option chains, open interest, PCR, Max Pain and market setups
-          in one clean analytics workspace.
-        </p>
-        <div class="hero-buttons">
-          <a class="primary-btn" href="#option-chain">Explore Option Chain →</a>
-          <a class="secondary-btn" href="#analytics">View Analytics</a>
-        </div>
-        <div class="hero-note">
-          <span>✓ NIFTY</span><span>✓ BANK NIFTY</span><span>✓ FINNIFTY</span><span>✓ F&O</span>
-        </div>
-      </div>
-
-      <div class="dashboard-preview">
-        <div class="window-bar">
-          <div class="window-dots"><i></i><i></i><i></i></div>
-          <span>OPTIONPULSE • MARKET PREVIEW</span>
-          <b>DEMO DATA</b>
-        </div>
-
-        <div class="preview-grid">
-          <div class="market-card">
-            <div><small>NIFTY 50</small><span class="up">+0.58%</span></div>
-            <strong>24,768.35</strong>
-            <p class="up">+142.65 today</p>
-            <div class="mini-chart positive"></div>
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">DATA ENGINEER • AZURE • CLOUD • AI</p>
+          <h1>Data Engineer transforming complex data into <span>scalable solutions.</span></h1>
+          <p class="hero-text">
+            4+ years of professional experience, including 3+ years in Data Engineering,
+            building scalable ETL/ELT pipelines and cloud-based data solutions with Azure,
+            Spark, PySpark, Snowflake, SQL and Python.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View My Work</a>
+            <a class="btn secondary full" href="Prince-Kumar-Resume.pdf" download>Download Resume</a>
+            <a class="btn ghost" href="#contact">Let's Connect</a>
           </div>
-          <div class="market-card">
-            <div><small>BANK NIFTY</small><span class="down">−0.18%</span></div>
-            <strong>53,214.80</strong>
-            <p class="down">−98.20 today</p>
-            <div class="mini-chart negative"></div>
+          <div class="social-row">
+            <a href="https://www.linkedin.com/in/prince-kumar-90aa15386/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="https://github.com/NotGencoder99" target="_blank" rel="noreferrer">GitHub ↗</a>
           </div>
-
-          <div class="chain-mini">
-            <div class="table-title"><span>OPTION CHAIN</span><small>NIFTY WEEKLY</small></div>
-            <div class="mini-head"><span>CE OI</span><span>CE LTP</span><span>STRIKE</span><span>PE LTP</span><span>PE OI</span></div>
-            <div class="mini-row"><b>1.24M</b><em>182.40</em><strong>24700</strong><em>76.85</em><b>892K</b></div>
-            <div class="mini-row"><b>1.86M</b><em>148.65</em><strong>24750</strong><em>92.30</em><b>1.12M</b></div>
-            <div class="mini-row active"><b>2.41M</b><em>118.20</em><strong>24800</strong><em>114.55</em><b>1.94M</b></div>
-            <div class="mini-row"><b>1.78M</b><em>91.45</em><strong>24850</strong><em>142.80</em><b>2.36M</b></div>
-            <div class="mini-row"><b>1.32M</b><em>68.90</em><strong>24900</strong><em>176.40</em><b>2.18M</b></div>
-          </div>
-
-          <div class="side-card">
-            <div class="side-title"><span>PCR</span><b>Bearish</b></div>
-            <strong>0.84</strong>
-            <div class="scale"><i></i></div>
-            <div class="scale-labels"><span>0.0</span><span>1.0</span><span>2.0</span></div>
-          </div>
-
-          <div class="side-card trend-card">
-            <div class="side-title"><span>TRENDING OI</span><b>⌁</b></div>
-            <p>NIFTY 24800 CE <strong>+24.6%</strong></p>
-            <p>BANKNIFTY 53000 CE <strong>+18.3%</strong></p>
-            <p>RELIANCE 2950 CE <strong>+12.8%</strong></p>
-            <p>NIFTY 24700 PE <strong>−8.4%</strong></p>
+          <div class="quick-stats">
+            <div><strong>4+</strong><span>Years Experience</span></div>
+            <div><strong>3+</strong><span>Years Data Engineering</span></div>
+            <div><strong>5+</strong><span>Featured Projects</span></div>
           </div>
         </div>
 
-        <div class="bullish-tag">↗ <span>BULLISH SETUP</span><strong>Nifty 24800 CE · +24%</strong></div>
+        <div class="hero-card reveal">
+          <div class="profile-frame">
+            <img src="profile-framed.png" alt="Prince Kumar - Data Engineer" />
+          </div>
+          <p class="card-label">CURRENT ROLE</p>
+          <h2>Data Engineer</h2>
+          <p>Building reliable data platforms, distributed processing solutions and cloud data pipelines.</p>
+          <div class="tech-pills">
+            <span>Azure</span><span>Databricks</span><span>PySpark</span><span>Python</span><span>SQL</span><span>RAG / GenAI</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="stats">
-      <div><strong>24,768.35</strong><span>NIFTY 50</span><small class="up">+0.58%</small></div>
-      <div><strong>53,214.80</strong><span>BANK NIFTY</span><small class="down">−0.18%</small></div>
-      <div><strong>0.84</strong><span>PUT/CALL RATIO</span><small>Current</small></div>
-      <div><strong>24,800</strong><span>MAX PAIN</span><small>Weekly</small></div>
-    </section>
-
-    <section class="section" id="option-chain">
-      <div class="section-heading">
-        <div>
-          <span class="eyebrow">LIVE WORKSPACE</span>
-          <h2>Option Chain</h2>
-          <p>Strike-wise view of calls, puts, open interest and price.</p>
+    <section id="about" class="section muted">
+      <div class="container about-modern">
+        <div class="about-intro reveal">
+          <p class="eyebrow">ABOUT ME</p>
+          <h2>Engineering data systems that solve real business problems.</h2>
+          <div class="about-rule"></div>
+          <p class="about-tagline">Data Engineering • Cloud • Distributed Processing</p>
         </div>
-        <div class="tabs">
-          <button class="tab active" data-index="NIFTY">NIFTY</button>
-          <button class="tab" data-index="BANKNIFTY">BANK NIFTY</button>
-          <button class="tab" data-index="FINNIFTY">FINNIFTY</button>
+
+        <div class="about-content">
+          <div class="about-copy reveal">
+            <p>
+              I am a <strong>Data Engineer with 4+ years of professional experience</strong>,
+              including 3+ years focused on building scalable ETL/ELT pipelines and
+              cloud-based data solutions.
+            </p>
+            <p>
+              I started my career in <strong>ERP development</strong>, where I worked with
+              SQL, data analysis, development and migration. That foundation led me into
+              Data Engineering, where I now work with Azure, Apache Spark, PySpark,
+              Databricks, Snowflake and modern data-platform architecture.
+            </p>
+            <p>
+              I bring a combination of <strong>strong data understanding, cloud migration
+              experience and enterprise engineering</strong>. I enjoy connecting business
+              requirements with practical technical solutions and building systems that
+              are reliable, scalable and efficient.
+            </p>
+          </div>
+
+          <div class="about-highlights reveal">
+            <div class="highlight-card">
+              <strong>4+</strong>
+              <span>Years professional experience</span>
+            </div>
+            <div class="highlight-card">
+              <strong>3+</strong>
+              <span>Years in Data Engineering</span>
+            </div>
+            <div class="highlight-card">
+              <strong>Cloud</strong>
+              <span>Azure & enterprise migration</span>
+            </div>
+            <div class="highlight-card">
+              <strong>Scale</strong>
+              <span>Large enterprise workloads</span>
+            </div>
+          </div>
+
+          <div class="about-focus reveal">
+            <p class="eyebrow">BEYOND THE WORK</p>
+            <div class="personal">
+              <span>🍳 Cooking</span><span>✈️ Traveling</span><span>💪 Fitness</span><span>🤖 RAG & GenAI</span>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="toolbar">
-        <select id="expiry">
-          <option>Weekly Expiry</option>
-          <option>Next Weekly</option>
-          <option>Monthly Expiry</option>
-        </select>
-        <button class="filter active">All Strikes</button>
-        <button class="filter">Near ATM</button>
-        <button class="filter">ITM</button>
-        <button class="filter">OTM</button>
-        <span class="market-status">● Market preview</span>
-      </div>
-
-      <div class="chain-wrap">
-        <table id="chainTable">
-          <thead>
-            <tr>
-              <th colspan="3" class="call-head">CALLS</th>
-              <th class="strike-head">STRIKE</th>
-              <th colspan="3" class="put-head">PUTS</th>
-            </tr>
-            <tr class="subhead">
-              <th>OI</th><th>CHG OI</th><th>LTP</th><th>PRICE</th><th>LTP</th><th>CHG OI</th><th>OI</th>
-            </tr>
-          </thead>
-          <tbody id="chainBody"></tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="section" id="analytics">
-      <div class="section-heading">
-        <div>
-          <span class="eyebrow">MARKET INTELLIGENCE</span>
-          <h2>Analytics at a glance</h2>
-          <p>Useful building blocks for an options analytics platform.</p>
-        </div>
-      </div>
-
-      <div class="analytics-grid">
-        <article class="analytics-card">
-          <div class="card-icon">OI</div>
-          <h3>Open Interest</h3>
-          <p>Compare call and put positioning around important strikes.</p>
-          <div class="bar-group"><span style="width:82%"></span><span style="width:58%"></span><span style="width:72%"></span></div>
-        </article>
-        <article class="analytics-card">
-          <div class="card-icon">P/C</div>
-          <h3>PCR Analysis</h3>
-          <p>Track put/call ratios across selected expiries and strikes.</p>
-          <div class="metric-line"><strong>0.84</strong><span>Current PCR</span></div>
-        </article>
-        <article class="analytics-card">
-          <div class="card-icon">MP</div>
-          <h3>Max Pain</h3>
-          <p>Show the strike where aggregate option pain is minimized.</p>
-          <div class="metric-line"><strong>24,800</strong><span>Weekly</span></div>
-        </article>
-        <article class="analytics-card">
-          <div class="card-icon">IV</div>
-          <h3>Volatility</h3>
-          <p>Prepare the platform for implied-volatility and range analysis.</p>
-          <div class="metric-line"><strong>13.42%</strong><span>Illustrative IV</span></div>
-        </article>
       </div>
     </section>
 
-    <section class="section tools-section" id="tools">
-      <div class="section-heading">
-        <div>
-          <span class="eyebrow">COMING NEXT</span>
-          <h2>Build the full platform</h2>
-          <p>The static UI is only the first layer. We can connect real data and analytics later.</p>
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="center-heading reveal">
+          <p class="eyebrow">TECHNICAL EXPERTISE</p>
+          <h2>Tools I use to build data solutions.</h2>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-group reveal"><h3>Cloud & Platforms</h3><div class="tags"><span>Microsoft Azure</span><span>Azure Data Factory</span><span>Azure Databricks</span><span>Azure SQL</span><span>AWS</span><span>Snowflake</span></div></div>
+          <div class="skill-group reveal"><h3>Data Engineering</h3><div class="tags"><span>ETL / ELT</span><span>Apache Spark</span><span>PySpark</span><span>Delta Lake</span><span>Data Warehousing</span><span>Incremental Loading</span><span>SCD Type 2</span></div></div>
+          <div class="skill-group reveal"><h3>Programming & Databases</h3><div class="tags"><span>Python</span><span>SQL</span><span>PostgreSQL</span><span>MySQL</span><span>Oracle</span><span>MongoDB</span><span>FastAPI</span></div></div>
+          <div class="skill-group reveal"><h3>Big Data & DevOps</h3><div class="tags"><span>Airflow</span><span>Kafka</span><span>Hive</span><span>Hadoop</span><span>NiFi</span><span>Docker</span><span>Kubernetes</span><span>CI/CD</span><span>Shell Scripting</span></div></div>
+          <div class="skill-group reveal"><h3>AI & Knowledge Sharing</h3><div class="tags"><span>RAG</span><span>GenAI</span><span>Machine Learning</span><span>Technical Content</span></div></div>
         </div>
       </div>
-      <div class="roadmap">
-        <div><b>01</b><h3>Interactive charts</h3><p>OI, volume, IV and price visualizations.</p></div>
-        <div><b>02</b><h3>Python backend</h3><p>FastAPI services for calculations and APIs.</p></div>
-        <div><b>03</b><h3>Market data</h3><p>Connect an appropriate broker or licensed data source.</p></div>
-        <div><b>04</b><h3>Data engineering</h3><p>ADLS, Databricks, Delta Lake and historical analytics.</p></div>
+    </section>
+
+    <section id="projects" class="section muted">
+      <div class="container">
+        <div class="center-heading reveal">
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Projects & enterprise experience.</h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card featured reveal">
+            <div class="project-top"><span class="project-number">01</span><span>Oct 2024 — Present</span></div>
+            <p class="client">CLIENT PROJECT • YES BANK</p>
+            <h3>Centralized Enterprise Data Lake & Analytics Platform</h3>
+            <p>Built a centralized data lake solution integrating PostgreSQL, Oracle, MySQL and REST APIs. Designed Spark/PySpark ETL workflows for real-time and historical processing, incremental loading and SCD Type 2, while contributing to S3-based analytics architecture, data modeling, RBAC, microservices, architecture planning and team mentoring.</p>
+            <div class="project-impact"><span><b>Focus</b> Enterprise Data Lake</span><span><b>Processing</b> Real-time + Historical</span><span><b>Architecture</b> Distributed Data</span></div>
+            <div class="tags"><span>Python</span><span>PySpark</span><span>Airflow</span><span>PostgreSQL</span><span>MySQL</span><span>Oracle</span><span>FastAPI</span><span>Docker</span><span>Kubernetes</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top"><span class="project-number">02</span><span>Jul 2024 — Oct 2024</span></div>
+            <p class="client">iauro Systems Pvt. Ltd.</p>
+            <h3>Rafters</h3>
+            <p>Led development of a sports data API platform serving NFL, NHL, NBA and MLB. Processed <strong>200+ GB</strong> of raw data covering roughly <strong>100 years per sport</strong>, with extraction, cleaning, business-specific formatting and normalized database design.</p>
+            <div class="project-impact"><span><b>Scale</b> 200+ GB</span><span><b>Coverage</b> 100 years / sport</span><span><b>Domains</b> NFL • NHL • NBA • MLB</span></div>
+            <div class="tags"><span>AWS</span><span>PySpark</span><span>Python</span><span>MongoDB</span><span>PostgreSQL</span><span>Metastore</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top"><span class="project-number">03</span><span>Jan 2024 — Jun 2024</span></div>
+            <p class="client">iauro Systems Pvt. Ltd.</p>
+            <h3>Azure Cloud Data Engineering & CI/CD Platform</h3>
+            <p>Developed and managed cloud data pipelines using Azure Data Factory and Databricks. Implemented CI/CD automation, handled database optimization and troubleshooting, and improved application performance through code and system-level optimization.</p>
+            <div class="project-impact"><span><b>Cloud</b> Microsoft Azure</span><span><b>Orchestration</b> ADF</span><span><b>Processing</b> Databricks</span></div>
+            <div class="tags"><span>Microsoft Azure</span><span>Azure Data Factory</span><span>Azure Databricks</span><span>Azure SQL</span><span>CI/CD</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top"><span class="project-number">04</span><span>Apr 2023 — Dec 2023</span></div>
+            <p class="client">iauro Systems Pvt. Ltd.</p>
+            <h3>Telefonica</h3>
+            <p>Designed and implemented ETL pipelines using Apache Spark and Airflow, evaluated SQL and time-series databases for architectural requirements, resolved data issues for DevOps and backend teams, and worked with distributed database systems.</p>
+            <div class="project-impact"><span><b>Pipeline</b> Spark + Airflow</span><span><b>Streaming</b> Kafka</span><span><b>Platform</b> Hadoop / Hive</span></div>
+            <div class="tags"><span>ETL</span><span>Airflow</span><span>Kafka</span><span>PostgreSQL</span><span>Spark</span><span>Hive</span><span>PySpark</span><span>Python</span><span>Hadoop</span></div>
+          </article>
+
+          <article class="project-card featured reveal">
+  <div class="project-top">
+    <span class="project-number">05</span>
+    <span class="current-badge">● CURRENT PROJECT</span>
+  </div>
+
+  <p class="client">DATA ENGINEERING + GENAI</p>
+
+  <h3>Hospital Customer Intelligence & Conversational Analytics Platform</h3>
+
+  <p>
+    Built an end-to-end hospital data platform on Azure Databricks to
+    consolidate patient, appointment, doctor, department and billing data
+    from multiple sources. Developed Bronze, Silver and Gold Delta Lake
+    pipelines using PySpark and designed analytics-ready fact and dimension
+    tables for hospital reporting and analysis.
+  </p>
+
+  <p>
+    Implemented Unity Catalog for centralized governance and access control,
+    and configured a Databricks Genie Agent over curated Gold-layer datasets
+    so business users can explore hospital KPIs using natural language.
+  </p>
+
+  <div class="project-impact">
+    <span><b>Architecture</b> Bronze • Silver • Gold</span>
+    <span><b>AI</b> Databricks Genie</span>
+    <span><b>Governance</b> Unity Catalog</span>
+  </div>
+
+  <div class="tags">
+    <span>ADLS Gen2</span>
+    <span>Databricks</span>
+    <span>PySpark</span>
+    <span>SQL</span>
+    <span>Delta Lake</span>
+    <span>Unity Catalog</span>
+    <span>Databricks Genie</span>
+    <span>AI/BI</span>
+    <span>Git</span>
+  </div>
+</article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section">
+      <div class="container">
+        <div class="center-heading reveal">
+          <p class="eyebrow">CERTIFICATIONS</p>
+          <h2>Credentials that support my expertise.</h2>
+        </div>
+        <div class="cert-grid">
+          <div class="cert-card reveal"><span>01</span><h3>Databricks Certified Data Engineer Associate</h3><p>Databricks</p></div>
+          <div class="cert-card reveal"><span>02</span><h3>Azure Data Fundamentals (DP-900)</h3><p>Microsoft</p></div>
+          <div class="cert-card reveal"><span>03</span><h3>Azure Fundamentals (AZ-900)</h3><p>Microsoft</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learning" class="section dark-section">
+      <div class="container learning-grid">
+        <div class="reveal">
+          <p class="eyebrow">KNOWLEDGE SHARING</p>
+          <h2>Learn Data Engineering. Build better data systems.</h2>
+          <p>I want this portfolio to be more than a resume — a place where recruiters can understand my work and the next generation of engineers can learn from my experience.</p>
+        </div>
+        <div class="learning-topics reveal">
+          <span>Azure Data Engineering</span><span>PySpark & Spark</span><span>SQL & Warehousing</span><span>ETL / ELT</span><span>RAG & GenAI</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Have an opportunity or want to talk data?</h2>
+          <p>I'm open to Data Engineering opportunities, technical conversations and knowledge-sharing collaborations.</p>
+          <div class="contact-links">
+            <a href="mailto:princekumar.genai@gmail.com">Email ↗</a>
+            <a href="https://www.linkedin.com/in/prince-kumar-90aa15386/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="https://github.com/NotGencoder99" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="contact-card reveal">
+          <p>CONTACT DETAILS</p>
+          <h3>Let's build something useful.</h3>
+          <div class="contact-detail">
+            <span>Email</span>
+            <a href="mailto:princekumar.genai@gmail.com">princekumar.genai@gmail.com</a>
+          </div>
+          <div class="contact-detail">
+            <span>Phone</span>
+            <a href="tel:+918237965795">+91 82379 65795</a>
+          </div>
+          <div class="contact-detail">
+            <span>Location</span>
+            <strong>Pune, India</strong>
+          </div>
+          <a class="btn primary full" href="mailto:princekumar.genai@gmail.com">Contact Me</a>
+          <a class="btn secondary full" href="Prince-Kumar-Resume.pdf" download>Download Resume</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div><span class="brand-mark small">O</span><strong>OptionPulse</strong></div>
-    <p>Independent options analytics project • Demo values are illustrative.</p>
-  </footer>
+  <footer><div class="container footer-inner"><span>© <span id="year"></span> Prince Kumar</span><span>Data Engineer • Azure • Spark • AI</span></div></footer>
 
   <script src="script.js"></script>
 </body>

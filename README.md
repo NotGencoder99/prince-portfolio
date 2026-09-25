@@ -1,20 +1,24 @@
-# OptionPulse — Options Analytics
+# Prince Kumar — Data Engineer Portfolio
 
-A static frontend prototype inspired by modern Indian options analytics platforms.
+A simple, responsive portfolio built from scratch with:
+- HTML
+- CSS
+- Vanilla JavaScript
 
-## Files
-- `index.html` — page structure
-- `style.css` — responsive styling
-- `script.js` — option-chain demo data and interactions
+## Run locally
+Open `index.html` directly in your browser.
 
-## Run
-Open `index.html` in a browser.
+For the best development experience, use VS Code + Live Server, or any simple local HTTP server.
 
-## GitHub Pages
-Upload all three files to the root of a public GitHub repository, then enable:
-Settings → Pages → Deploy from branch → main → / (root)
+## Before publishing
+Replace:
+- `your.email@example.com`
+- LinkedIn URL
+- GitHub URL
+- Resume link
+- Any project/client details that are confidential
 
-## Important
-The market figures in this version are illustrative UI data, not live prices or trading advice.
+Add your profile photo to `assets/` later if desired.
 
-Next stages can add a Python/FastAPI backend, database, historical data, analytics calculations and an appropriate market-data provider.
+## Free deployment options
+This static site can be deployed to GitHub Pages, Cloudflare Pages, or another static host.
